@@ -1,0 +1,28 @@
+.nav-bar
+    position: relative
+
+    &__list
+        @include absCenter
+        width: fit-content
+        list-style: none
+
+    &__item
+        float: left
+        margin-right: 1rem
+
+    &__link  
+        &:visited,
+        &:link
+            // display: inline-block
+            color: $color-grey-dark
+            background-color: $color-grey-light
+            padding: 1rem
+            border-radius: 3rem
+            text-decoration: none
+            text-transform: uppercase
+            font-size: 1.3rem
+
+    &__icon
+        color: $color-primary
+        margin-right: 1rem
+    
