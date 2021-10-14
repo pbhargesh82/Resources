@@ -36,6 +36,17 @@ body
     font-size: 1.6rem
     margin-bottom: 1.5rem
 
+    &--premium::after
+        content: 'PREMIUM'
+        background-color: $color-secondary
+        color: $color-white
+        display: inline-block
+        padding: .1rem .6rem 
+        border-radius: .3rem
+        font-size: 8px
+        margin-left: 1.5rem
+        transform: translateY(-.3rem)
+
 .resource__text
     color: $color-grey-dark
     font-size: 1.4rem
