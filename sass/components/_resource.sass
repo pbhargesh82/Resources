@@ -1,9 +1,16 @@
 .resource
 
+    @include respond($tab-port)
+        text-align: center
+
     &__logo
         height: 4rem
         display: block
         margin-bottom: 2rem
+
+        @include respond($tab-port)
+            margin: 0 auto
+            margin-bottom: 2rem
     
     &__heading
         
@@ -19,6 +26,7 @@
         &:hover,
         &:active
             color: $color-secondary
+            
 
     &__text
         

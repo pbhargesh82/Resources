@@ -6,8 +6,17 @@
     box-sizing: inherit
 
 html
-    font-size: 62.5% // 10px = 1rem and 16px = 1.rem so (100/16) * 10 (1rem) = 62.5%
+    font-size: base-font-size(10px) // 10px = 1rem and 16px = 1.rem so (100/16) * 10 (1rem) = 62.5%
     height: 100%
+
+    @include respond($big-desktop)
+        font-size: base-font-size(12px)
+
+    @include respond($tab-land)
+        font-size: base-font-size(9px)
+
+    @include respond($tab-port)
+        font-size: base-font-size(8px)
 
 body
     box-sizing: border-box
