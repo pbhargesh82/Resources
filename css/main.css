@@ -161,6 +161,12 @@ body {
   font-weight: 300;
 }
 
+@media (max-width: 56.25em) {
+  .footer__caption {
+    font-size: 2rem;
+  }
+}
+
 .footer__icon {
   color: red;
 }
